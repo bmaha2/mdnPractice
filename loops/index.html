@@ -1,0 +1,175 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Loops: Task 1</title>
+    <style>
+      p {
+        color: purple;
+        margin: 0.5em 0;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+    </style>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+
+  <body>
+
+    <section class="preview">
+
+
+
+    </section>
+
+  </body>
+  <script>
+    let myArray = ['tomatoes', 'chick peas', 'onions', 'rice', 'black beans'];
+    let list = document.createElement('ul');
+    //let listItem;
+
+    // Add your code here
+    for (let i = 0; i < myArray.length; i++) {
+        itemText = myArray[i];
+        const listItem = document.createElement('li');
+        listItem.textContent = itemText;
+        list.appendChild(listItem);
+        
+    }
+   
+
+
+    // Don't edit the code below here!
+
+    const section = document.querySelector('section');
+    section.appendChild(list);
+   
+  </script>
+
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Loops: Task 2</title>
+  <style>
+    p {
+      color: purple;
+      margin: 0.5em 0;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+  </style>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+
+<body>
+
+  <section class="preview">
+
+
+
+  </section>
+
+</body>
+<script>
+  let name = 'Mustafa';
+  let i = 0;
+  let para = document.createElement('p');
+
+  let phonebook = [
+    { name: 'Chris', number: '1549' },
+    { name: 'Li Kang', number: '9634' },
+    { name: 'Anne', number: '9065' },
+    { name: 'Francesca', number: '3001' },
+    { name: 'Mustafa', number: '6888' },
+    { name: 'Tina', number: '4312' },
+    { name: 'Bert', number: '7780' },
+    { name: 'Jada', number: '2282' },
+  ]
+
+  // Add your code here
+
+  while(i < phonebook.length) {
+    if (name === phonebook[i].name) {
+      para.textContent = phonebook[i].name +'-' + phonebook[i].number;
+      break;
+    }
+    i++;
+
+  }
+  console.log(phonebook)
+
+  // Don't edit the code below here!
+  let section = document.querySelector('section');
+  section.appendChild(para);
+</script>
+
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Loops: Task 3</title>
+  <style>
+    p {
+      color: purple;
+      margin: 0.5em 0;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+  </style>
+  <!-- <link rel="stylesheet" href="../styles.css" /> -->
+</head>
+
+<body>
+
+  <section class="preview">
+
+
+
+  </section>
+
+</body>
+<script>
+  let i = 500;
+  let para = document.createElement('p');
+
+  function isPrime(num) {
+    for (let i = 2; i < num; i++) {
+      if (num % i === 0) {
+        return false;
+      }
+    }
+
+    return true;
+  }
+  
+
+  // Add your code here
+  while(i > 1) {
+    if (isPrime(i) === true) {
+      para.textContent += i + '\n';
+      
+    }
+    
+    i--;
+
+  } 
+
+
+  // Don't edit the code below here!
+  let section = document.querySelector('section');
+  section.appendChild(para);
+</script>
+
+</html>
