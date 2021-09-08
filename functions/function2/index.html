@@ -1,26 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8"/>
+
+<head>
+    <meta charset="utf-8" />
     <title>Functions: Task 2</title>
     <style>
-      p {
-        color: purple;
-        margin: 0.5em 0;
-      }
+        p {
+            color: purple;
+            margin: 0.5em 0;
+        }
 
-      * {
-        box-sizing: border-box;
-      }
+        * {
+            box-sizing: border-box;
+        }
 
-      canvas {
-        border: 1px solid black;
-      }
+        canvas {
+            border: 1px solid black;
+        }
     </style>
-    
-  </head>
 
-  <body>
+</head>
+
+<body>
 
     <section class="preview">
 
@@ -30,8 +31,8 @@
 
     </canvas>
 
-  </body>
-  <script>
+</body>
+<script>
     let canvas = document.querySelector('canvas');
     let ctx = canvas.getContext('2d');
 
@@ -43,19 +44,19 @@
 
     // Add your code here
     function drawRectangle(x, y, width, height, color) {
-ctx.fillStyle = 'white';
-ctx.clearRect(0, 0, canvas.width, canvas.height);
-ctx.fillStyle = color;
-ctx.fillRect(x, y, width, height);
+        ctx.fillStyle = 'white';
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        ctx.fillStyle = color;
+        ctx.fillRect(x, y, width, height);
 
-}
+    }
 
-drawRectangle(x, y, width, height, color);
+    drawRectangle(x, y, width, height, color);
 
 
     // Don't edit the code below here!
 
     const section = document.querySelector('section');
-  </script>
+</script>
 
 </html>
